@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.sqlite*
+apk-releases/*.apk
+**/local.properties
+

@@ -1,0 +1,16 @@
+{
+  "name": "attendance",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "admin-web",
+    "mobile-app"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev -w backend\" \"npm run dev -w admin-web\" \"npm run dev -w mobile-app\"",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
